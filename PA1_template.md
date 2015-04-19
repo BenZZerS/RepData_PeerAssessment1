@@ -31,6 +31,17 @@ qplot(y=steps, x=date, data=stepsDate, geom="bar", stat="identity",
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
+```r
+qplot(steps, data=stepsDate, geom="histogram", 
+      main="Histogram of the total number of steps")
+```
+
+```
+## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
+```
+
+![](PA1_template_files/figure-html/unnamed-chunk-3-2.png) 
+
 2. Calculate and report the **mean** and **median** total number of
    steps taken per day
    
@@ -112,6 +123,17 @@ qplot(y=steps, x=date, data=adjStepsDate, geom="bar", stat="identity",
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
+
+```r
+qplot(steps, data=adjStepsDate, geom="histogram", 
+      main="Histogram of the total number of steps")
+```
+
+```
+## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
+```
+
+![](PA1_template_files/figure-html/unnamed-chunk-9-2.png) 
 
 
 ```r

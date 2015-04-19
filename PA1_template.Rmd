@@ -29,6 +29,8 @@ stepsDate$date <- as.factor(stepsDate$date)
 qplot(y=steps, x=date, data=stepsDate, geom="bar", stat="identity", 
       main="Histogram of the total number of steps taken each day") + 
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
+qplot(steps, data=stepsDate, geom="histogram", 
+      main="Histogram of the total number of steps")
 ```
 
 2. Calculate and report the **mean** and **median** total number of
@@ -82,6 +84,8 @@ adjStepsDate$date <- as.factor(adjStepsDate$date)
 qplot(y=steps, x=date, data=adjStepsDate, geom="bar", stat="identity", 
       main="Histogram of the total number of steps taken each day") + 
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
+qplot(steps, data=adjStepsDate, geom="histogram", 
+      main="Histogram of the total number of steps")
 ```
 
 ```{r}
